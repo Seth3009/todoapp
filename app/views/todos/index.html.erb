@@ -16,6 +16,7 @@
     <td><%= todo.description %></td>
     <td><%= link_to "Edit", edit_todo_path(todo) %>
     <td><%= link_to "Show", todo_path(todo) %>
+    <td><%= link_to "Delete", todo_path(todo),  data: { "turbo-method": :delete} %></td>
     </tr>
 <% end %>
 </table>
